@@ -1,0 +1,7 @@
+#Escreva uma função que conta a quantidade de cada vogal digitada e armazene tal quantidade em um dicionário, onde a chave é a vogal considerada. Deve parar de ler quando for digitado uma consoante. No final, apresente o dicionário com a chave sendo cada vogal e os valores suas quantidades.
+dicvog={}
+vog=input('digite uma frase: ').upper()
+vogal='AEIOU'
+for i in vog:
+  dicvog[i]=vog.count(i)
+print(dicvog)
