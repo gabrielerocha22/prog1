@@ -1,0 +1,17 @@
+dic={}
+while True:
+  cpf=int(input('digite seu cpf: '))
+  if cpf==0:
+    break
+  nome=input('digite seu nome: ')
+  idade=int(input('Digite sua idade: '))
+  telefone=int(input('Digite seu telefone: '))
+  deseja=input('Deseja continuar?[S/N]').upper()
+  if deseja=='N':
+    break
+  else:
+    ('ok')  
+dic['nome'] = nome
+dic['idade'] = idade
+dic['telefone'] = telefone
+print(dic)
