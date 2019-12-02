@@ -1,0 +1,10 @@
+#Escreva uma função que conta a quantidade de cada vogal digitada e armazene tal quantidade em um dicionário, onde a chave é a vogal considerada. Deve parar de ler quando for digitado uma consoante. No final, apresente o dicionário com a chave sendo cada vogal e os valores suas quantidades.
+vogal='AEIOU'
+cons='BCDFGHJKLMNPQRSTVXYZW'
+dic={}
+while True:
+  x=input('digite uma vogal:').upper()
+  if x ==cons:
+    break
+
+    
