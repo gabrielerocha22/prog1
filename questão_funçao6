@@ -1,0 +1,9 @@
+#Crie uma função que permita mostrar uma sequência de números ímpares de 1 até n.
+def cont_impar(num):
+  for i in range(num+1):
+    if i%2!=0:
+      print('{} são impares'.format(i))
+
+
+num=int(input('Digite um número:'))
+cont_impar(num)
