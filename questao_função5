@@ -1,0 +1,14 @@
+#Crie uma função em que, dados 3 números como parâmetros, permita verificar se a soma de quaisquer par de números gera a soma do terceiro número
+def soma_num(a,b,c):
+  if a+b==c:
+    return('A soma de A+B é igual a C')
+  elif b+c==a:
+    return('A soma de B+C é igual a A')
+  else:
+    return('Nenhum número somado com o outro da o resultado do terceiro')
+    
+
+a=int(input('Digite um numero'))
+b=int(input('Digite mais um número'))
+c=int(input('Digite o ultimo numero: '))
+print(soma_num(a,b,c))
