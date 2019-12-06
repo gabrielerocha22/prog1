@@ -1,0 +1,10 @@
+#Crie uma função “numeropar” que permita verificar um dado número x, passado como parâmetro, é número par.
+def numero_par(num):
+  if num%2==0:
+    return('Ele é par! ')
+  else:
+    return('Ele é impar! ')
+
+
+num=int(input('DIgite um número para saber se ele é par:'))
+print(numero_par(num))
