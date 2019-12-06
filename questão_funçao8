@@ -1,0 +1,11 @@
+#Crie uma função em que, dado um inteiro não-negativo n, seja possível determinar n!(fatorial).
+def fatorial(num):
+  x=1
+  if num !=0:
+    for i in range (num,0,-1):
+      x *= i
+  print(x)    
+
+
+num=int(input('Digite um numero: '))
+fatorial(num)
