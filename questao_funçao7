@@ -1,0 +1,8 @@
+#Crie uma função que permita imprimir os primeiros n números naturais.
+def num_naturais(num):
+  for i in range(num+1):
+    print(i)
+
+
+num=int(input('Digite um número: '))
+num_naturais(num)
