@@ -1,0 +1,8 @@
+#Crie uma função que permita a conversão de graus Celsius para Fahrenheit.
+def temperatura(graus):
+  x=(graus*9/5)+32
+  return(x)
+
+
+graus=int(input('Digite o graus em Celsius para ser convertido em Fahrenheit: '))
+print(temperatura(graus))
