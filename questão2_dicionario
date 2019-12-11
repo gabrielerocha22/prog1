@@ -1,0 +1,19 @@
+#Escreva um programa que lê duas notas de vários alunos e armazena tais notas em um dicionário, onde a chave é o nome do aluno. A entrada de dados deve terminar quando for lida uma string vazia como nome. Escreva uma função que retorna a média do aluno, dado seu nome.
+
+print('----------BOLETIM----------')
+print('1 - Adicionar notas do aluno\n2 - Média do Aluno \n')
+x=int(input('Digite sua opção:'))
+if x == 1:
+  dic_notas= {}
+  notas=[]
+  nome=input('Digite o nome do aluno:')
+  for i in range (2):
+    nota=int(input('Digite a nota do aluno: '))
+    notas.append(nota)
+  dic_notas[nome]=nota
+elif x ==2:
+  dic_notas
+  nome=input('Digite o nome do aluno: ')
+  media=(notas[0] + notas[1])/2
+  print('A média do aluno(a) {} é: {}'.format(nome,media))
+  
