@@ -1,0 +1,37 @@
+livros={}
+def adiciona_livros():
+  livro=input('Digite o nome do Livro a ser cadastrado: ')
+  quant=int(input('Digite a quantidade de exemplares a serem considerados: '))
+  deseja=input('Deseja adicionar outro livro?[S/N]').upper()
+  livros[livro]=quant
+  return(livros)
+
+print('--------- CADASTRO DE ALUNOS: ----------')
+dic_alunos={}
+aluno=input('Digite o nome do aluno a ser cadastrado:')
+matricula=int(input('Digite sua respectiva matrícula: '))
+dic_alunos[matricula]=aluno
+
+#cad livros
+print('---------- CADASTRO DE LIVROS: -----------')
+deseja=input('Deseja adicionar um livro?[S/N]').upper()
+while deseja == 'S':
+  print(adiciona_livros())
+  deseja=input('Deseja adicionar outro livro?[S/N]').upper() 
+else:
+  print('FIM')
+
+#consulta
+print('---------- CONSULTA DE LIVROS-----------')
+dic_alunos={}
+nome_alun=input('Digite o nome do aluno que você deseja verificar: ')
+if nome_alun == dic_alunos:
+  print()
+else:
+  print('Aluno não cadastrado, tente novamente! ')
+
+#emprestimo
+'''print('---------- EMPRÉSTIMO ----------')
+matricula_aluno=input('Digite o nome do aluno:')
+nome_livro=input('Digite o nome do livro:')
+if nome_livro == '''
