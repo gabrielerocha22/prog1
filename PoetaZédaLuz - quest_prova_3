@@ -8,21 +8,39 @@ def adiciona_livros():
   
  
 print('------BIBLIOTECA POETA ZÉ DA LUZ------ \n 1 - Cadastro de Alunos \n 2 - Cadastro de Livros \n 3 - Empréstimo de Livros \n 4 - Devolução de Livros \n 5 - Pagamentos ')
-print('--------- CADASTRO DE ALUNOS: ----------')
-dic_alunos={}
-aluno=input('Digite o nome do aluno a ser cadastrado:')
-matricula=int(input('Digite sua respectiva matrícula: '))
-dic_alunos[matricula]=aluno
+x=int(input('Digte uma opção: '))
+if x==1:
+  #cad alunos
+  print('--------- CADASTRO DE ALUNOS: ----------')
+  dic_alunos={}
+  aluno=input('Digite o nome do aluno a ser cadastrado:')
+  matricula=int(input('Digite sua respectiva matrícula: '))
+  dic_alunos[matricula]=aluno
 
-#cad livros
-print('---------- CADASTRO DE LIVROS: -----------')
-deseja=input('Deseja adicionar um livro?[S/N]').upper()
-while deseja == 'S':
-  print(adiciona_livros())
-  deseja=input('Deseja adicionar outro livro?[S/N]').upper() 
-else:
-  print('FIM')
-
+elif x==2:
+  #cad livros
+  print('---------- CADASTRO DE LIVROS: -----------')
+  deseja=input('Deseja adicionar um livro?[S/N]').upper()
+  while deseja == 'S':
+    print(adiciona_livros())
+    deseja=input('Deseja adicionar outro livro?[S/N]').upper() 
+  else:
+    print('FIM')
+#emprestimo de livro
+elif x ==3:
+  dic_emprestimo={}
+  livros={}
+  while dic_emprestimo <= 3:
+    mat=int(input('Digite a matrícula do aluno: '))
+    nome_livro=input('Digite o nome do livro a ser emprestado: ')
+    dic_emprestimo[mat]=nome_livro
+    for i in range (livros):
+      if nome_livro == livros:
+        print('Livro encontrado!')
+      else:
+        print('Livro não encontrado!')
+    if dic_emprestimo >3:
+      print('AVISO, O ALUNO JÁ CONTÉM A QUANTIDADE MÁXIMA DE EMPRÉSTIMO DE LIVROS')
 #consulta
 print('---------- CONSULTA DE LIVROS-----------')
 dic_alunos={}
@@ -32,8 +50,3 @@ if nome_alun == dic_alunos:
 else:
   print('Aluno não cadastrado, tente novamente! ')
 
-#emprestimo
-'''print('---------- EMPRÉSTIMO ----------')
-matricula_aluno=input('Digite o nome do aluno:')
-nome_livro=input('Digite o nome do livro:')
-if nome_livro == '''
