@@ -5,7 +5,9 @@ def adiciona_livros():
   deseja=input('Deseja adicionar outro livro?[S/N]').upper()
   livros[livro]=quant
   return(livros)
-
+  
+ 
+print('------BIBLIOTECA POETA ZÉ DA LUZ------ \n 1 - Cadastro de Alunos \n 2 - Cadastro de Livros \n 3 - Empréstimo de Livros \n 4 - Devolução de Livros \n 5 - Pagamentos ')
 print('--------- CADASTRO DE ALUNOS: ----------')
 dic_alunos={}
 aluno=input('Digite o nome do aluno a ser cadastrado:')
