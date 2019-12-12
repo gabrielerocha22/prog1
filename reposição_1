@@ -1,0 +1,33 @@
+print('----------PROCESSO DE ADOÇÃO----------')
+print(' Digite 1 para responder SIM e 2 para responder NÃO')
+perg1=int(input('Qual a idade do adotante?'))
+if perg1 <= 17:
+  print('NÃO PODE ADOTA')
+else:
+  perg2=int(input('O adotante é irmão ou ascendente?'))
+  if perg2 == 1:
+    print('NÃO PODE ADOTAR!')
+  else:
+    perg3=int(input('É adoção conjunta?'))
+    if perg3 == 1:
+      perg4=int(input('São casados ou mantém união estável?'))
+      if perg4==1:
+        perg5=int(input('1 para - Pais desconhecidos ou 2 para -  adotando destituído do poder familiar?'))
+        if perg5==1:
+          perg6=int(input('Qual a idade do adotando?'))
+          if perg6 >=12:
+            pergt7=int(input('Consentimento da criança para ser adotada?'))
+            if pergt7 == 1:
+              print('PODE ADOTAR!')
+            else:
+              print('NÃO PODE ADOTAR')
+        else:
+          perg8=int(input('Consentimento dos pais para adoção?'))
+          if perg8 == 1:
+            print('PODE ADOTAR')
+          else:
+            print('NÃO PODE ADOTAR')
+      else:
+        print('NÃO PODE ADOTAR')      
+    else:
+      print('NÃO PODE ADOTAR!')        
