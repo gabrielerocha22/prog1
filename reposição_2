@@ -1,0 +1,97 @@
+print('1 - ACESSO DO COORDENADOR \n 2 - ACESSO PARA PROVA (ALUNO)')
+digite=int(input('Digite sua opção: '))
+if digite == 1:
+  gab_oficial=[]
+  print('COORDENADOR, digite a resposta das 12 perguntas')
+  for i in range(12):
+    respostas=input(' - >')
+    gab_oficial.append(respostas)
+elif digite ==2:
+  print('----------PROVA---------- \n ----------PROTEL----------')
+  print('PRÉ - CÁLCULO')
+  respostas_calculo=[]
+  print('questão1: O valor de 1+1= ?')
+  print('A) 2\nB) 4\nC) 5\nD) 6\nE) 1')
+  resposta1=input('Digite sua resposta: ').upper()
+  if resposta1!='ABCDE':
+    print('ERRO! \nO GABARITO NÃO ACEITA NÚMEROS!')
+  else:
+    respostas_calculo=[resposta1]
+    print('Questão2: 4/2 = ?')
+    print('A) 1\nB) 2\nC) 3\nD) 4\nE) 5')
+    resposta2=input('Digite sua resposta: ').upper()
+    if resposta2!='ABCDE':
+      print('ERRO! \nO GABARITO NÃO ACEITA NÚMEROS!')
+    else:
+      respostas_calculo=[resposta1]
+  print('FUNDAMENTOS DA ELETRICIDADE')
+  respostas_fundamentos=[]
+  print('Questão1: Não sei fazer uma pergunta pra fundametnos, só tenho raiva, marca qualquer uma pra testar: ')
+  print('A) 2\nB) 4\nC) 5\nD) 6\nE) 1')
+  resposta1=input('Digite sua resposta').upper()
+  if resposta1!='ABCDE':
+    print('ERRO! \nO GABARITO NÃO ACEITA NÚMEROS!')
+  else:
+    respostas_fundamentos=[resposta1]
+    print('Questão2: Não sei fazer uma pergunta pra fundametnos, só tenho raiva, marca qualquer uma pra testar: ')
+    print('A) 5\nB) 6\nC) 7\nD) 8\nE) 9')
+    resposta2=input('Digite sua resposta: ').upper()
+    respostas_fundamentos=[resposta2]
+  print('INTRODUÇÃO A TELEMÁTICA')
+  respostas_intro=[]
+  print('Questão1: Quem é Von Neumann?: ')
+  print('A) O cara que fez todo mundo tirar nota baixa\nB) Não sei\nC) Marca a A\nD) Irmão da Xuxa\nE) Meu primo')
+  resposta1=input('Digite sua resposta').upper()
+  if resposta1!='ABCDE':
+    print('ERRO! \nO GABARITO NÃO ACEITA NÚMEROS!')
+  else:
+    respostas_intro=[resposta1]
+    print('Questão2: O primeiro computador é chamado de: : ')
+    print('A) ELiark\nB) Mamãe me bate\nC) Eniarquepeologico\nD) Eniac\nE) NASA')
+    resposta2=input('Digite sua resposta: ').upper()
+    respostas_intro=[resposta2]
+  print('PROGRAMAÇÃO')
+  respostas_prog=[]
+  print('Questão1: Para que serve um PRINT?: ')
+  print('A) Marca A\nB) Marca A\nC) Marca  A\nD) Marca A\nE) Marca A')
+  resposta1=input('Digite sua resposta').upper()
+  if resposta1!='ABCDE':
+    print('ERRO! \nO GABARITO NÃO ACEITA NÚMEROS!')
+  else:
+    respostas_prog=[resposta1]
+    print('Questão2: O que é uma string? :  ')
+    print('A) MARCA B\nB) MARCA B\nC)MARCA B\nD)MARCA B\nE) MARCA B')
+    resposta2=input('Digite sua resposta: ').upper()
+    respostas_prog=[resposta2]
+  print('LABORATÓRIO DE SISTEMAS ABERTOS')
+  respostas_lsa=[]
+  print('Questão1: Qual a opção que "mata" o processo? : ')
+  print('A) Kill\nB) CTRL + X\nC) Clear\nD) Chmod\nE) d+w')
+  resposta1=input('Digite sua resposta').upper()
+  if resposta1!='ABCDE':
+    print('ERRO! \nO GABARITO NÃO ACEITA NÚMEROS!')
+  else:
+    respostas_lsa=[resposta1]
+    print('Questão2:Para que serve o comando "clear? :  ')
+    print('A) Limpar a tela do terminal\nB) Fazer uma conexão SSH\nC)MARCA A\nD) MARCA A\nE) MARCA A')
+    resposta2=input('Digite sua resposta: ').upper()
+    respostas_lsa=[resposta2]
+  print('INGLÊS')
+  respostas_ingles=[]
+  print('Questão1: to sem vontade ja? : ')
+  print('A) Marca E\nB) Marca E\nC) Marca E\nD) Marca E\nE) Marca E')
+  resposta1=input('Digite sua resposta').upper()
+  if resposta1!='ABCDE':
+    print('ERRO! \nO GABARITO NÃO ACEITA NÚMEROS!' )
+  else:
+    respostas_ingles=[resposta1]
+    print('Questão2:pq estou fazendo isso? :  ')
+    print('A) Marca D\nB) Marca D\nC) MARCA D\nD) MARCA D\nE) MARCA D')
+    resposta2=input('Digite sua resposta: ').upper()
+    respostas_ingles=[resposta2]
+else: 
+  print('Não existe essa opção!')
+
+
+
+
