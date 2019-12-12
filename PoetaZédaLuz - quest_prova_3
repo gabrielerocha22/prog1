@@ -1,3 +1,9 @@
+dic_alunos={}
+def adiciona_aluno():
+  aluno=input('Digite o nome do aluno a ser cadastrado:')
+  matricula=int(input('Digite sua respectiva matrícula: '))
+  dic_alunos[matricula]=aluno
+
 livros={}
 def adiciona_livros():
   livro=input('Digite o nome do Livro a ser cadastrado: ')
@@ -5,34 +11,9 @@ def adiciona_livros():
   deseja=input('Deseja adicionar outro livro?[S/N]').upper()
   livros[livro]=quant
   return(livros)
-  
- 
-print('------BIBLIOTECA POETA ZÉ DA LUZ------ \n 1 - Cadastro de Alunos \n 2 - Cadastro de Livros \n 3 - Empréstimo de Livros \n 4 - Devolução de Livros \n 5 - Pagamentos \n 6 - Consulta de Livros ')
-x=int(input('Digte uma opção: '))
-if x==1:
-  #cad alunos
-  print('--------- CADASTRO DE ALUNOS: ----------')
-  dic_alunos={}
-  aluno=input('Digite o nome do aluno a ser cadastrado:')
-  matricula=int(input('Digite sua respectiva matrícula: '))
-  dic_alunos[matricula]=aluno
 
-elif x==2:
-  #cad livros
-  dic_cad_livros={}
-  print('---------- CADASTRO DE LIVROS: -----------')
-  deseja=input('Deseja adicionar um livro?[S/N]').upper()
-  while deseja == 'S':
-    deseja1=input('Nome do exemplar:').upper()
-    quant=int(input('Digite a quantidade de exemplares: '))
-    deseja=input('Deseja adicionar outro livro?[S/N]').upper()
-    dic_cad_livros[deseja1]=quant 
-    
-  else:
-    print('FIM')
-#emprestimo de livro
-elif x ==3:
-  dic_emprestimo={}
+dic_emprestimo={}
+def emprestimo_livro():
   livros={}
   while len(dic_emprestimo) <= 3:
     mat=int(input('Digite a matrícula do aluno: '))
@@ -45,9 +26,54 @@ elif x ==3:
         print('Livro não encontrado!')
     while len(dic_emprestimo)> 3:
       print('AVISO, O ALUNO JÁ CONTÉM A QUANTIDADE MÁXIMA DE EMPRÉSTIMO DE LIVROS')
-elif x == 6:
+  
+def devolução_livro():
+  dic_emprestimo
+  matricula_alun=int(input('Digite a matrícula do aluno: '))
+  deseja3=input('Deseja devolver algum livro?[S/N]').upper
+  if deseja3 == 'S':
+    dic_emprestimo
+
+print('------BIBLIOTECA POETA ZÉ DA LUZ------ \n 1 - Cadastro de Alunos \n 2 - Cadastro de Livros \n 3 - Empréstimo de Livros \n 4 - Devolução de Livros \n 5 - Relatório ')
+x=int(input('Digte uma opção: '))
+
+if x==1:
+  #cad alunos
+  print('--------- CADASTRO DE ALUNOS: ----------')
+  adiciona_aluno
+  desej=input('Deseja adicionar mais um aluno? [S/N]').upper()
+  if desej == 'S':
+    adiciona_aluno
+  else:
+    print('FIM')
+
+elif x==2:
+  dic_cad_livros={}
+  print('---------- CADASTRO DE LIVROS: -----------')
+  deseja=input('Deseja adicionar um livro?[S/N]').upper()
+  while deseja == 'S':
+    deseja1=input('Nome do exemplar:').upper()
+    quant=int(input('Digite a quantidade de exemplares: '))
+    deseja=input('Deseja adicionar outro livro?[S/N]').upper()
+    dic_cad_livros[deseja1]=quant 
+  else:
+    print('FIM')
+
+elif x == 3:
+  emprestimo_livro
+  deseja2=input('Deseja realizar mais um empréstimo? [S/N]').upper()
+  if deseja2== 'S':
+    emprestimo_livro
+  else:
+    print('FIM')
+
+elif x ==4 :
+  dic_emprestimo
+  matricula_alun=int(input('Digite a matrícula do aluno: '))
+
+elif x == 5:
   #consulta
-  print('---------- CONSULTA DE LIVROS-----------')
+  print('---------- RELATÓRIO -----------')
   dic_alunos={}
   nome_alun=input('Digite o nome do aluno que você deseja verificar: ')
   if nome_alun == dic_alunos:
