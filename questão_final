@@ -1,0 +1,35 @@
+def modifica(data):
+  if data[3:5]=='01':
+    return('Janeiro')
+  elif data[3:5]=='02':
+    return('Fevereiro')
+  elif data[3:5]=='03':
+    return('Março')
+  elif data[3:5]=='04':
+    return('Abril')
+  elif data[3:5]=='05':
+    return('Maio')
+  elif data[3:5]=='06':
+    return('Junho')
+  elif data[3:5]=='07':
+    return('Julho')
+  elif data[3:5]=='08':
+    return('Agosto')
+  elif data[3:5]=='09':
+    return('Setembro')
+  elif data[3:5]=='10':
+    return('Outubro')
+  elif data[3:5]=='11':
+    return('Novembro')
+  elif data[3:5]=='12':
+    return('Dezembro')
+
+
+data=input('Digite uma data no formato dd/mm/aaaa')
+print(data[0:2],modifica(data),data[6:11])
+x=int(data[6:11])
+if x%4==0:
+  print('Você nasceu em um ano bissexto! ')
+else:
+  print('Você não nasceu em um ano bissexto!')
+
