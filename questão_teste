@@ -5,7 +5,7 @@
 # Informar o valor de venda
 # Quando houver vendas, retirar do Estoque.
 produto={}
-def estoque(x):
+def estoque():
   inf=input('Digite o nome do produto: ')
   qnt=int(input('Digite a quantidade do produto: '))
   produto[inf]=qnt
@@ -13,15 +13,29 @@ def estoque(x):
   return(produto)
 def valores():
   produto={}
-  valor_compra=int(input('Digite o valor de compra:'))
-  produto[valor_compra]
-def valor_revenda():
-  valor_produto={}
-  inf=input('Digite o nome do produto: ')
-
+  prod=input('Digite o nome do produto: ')
+  if prod == produto:
+    valor_compra=int(input('Digite o valor de compra:'))
+    produto[valor_compra]
+  else:
+    return('Produto não encontrado!')
+def qnt_estoque():
+  produto={}
+  deseja=int(input('Digite 1 para ver a quantidade de um produto específico e 2 para saber o estoque total: '))
+  if deseja == 1:
+    y=input('Digite o nome do produto: ')
+    if y == produto:
+      return(len(y))
+    else:
+      return('Produto não encontrado!')
+  elif deseja == 2:
+    return(produto)
 print('-----------Batom Vermelho----------')
 print('1 - Adicionar Produto\n2 - Adicionar valor de venda\n3 - Estoque ')
 x=int(input('Digite a opção: '))
-if x == 1: 
-  print(estoque(x))
-#######################################
+if x == 1:
+  print(estoque)
+elif x == 2:
+  print(valores)
+elif x ==3:
+  print(qnt_estoque)
