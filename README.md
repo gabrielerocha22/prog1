@@ -1,2 +1,2 @@
 # prog1
-atvs de prog e afins
+Algumas questões em python de Programação 1
